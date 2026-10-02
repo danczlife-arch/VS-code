@@ -22,3 +22,8 @@ elif operation == "*":
 
 elif operation == "/":
     print("Division: ", number1 / number2)
+
+if operation not in ["+", "-", "*", "/"]:
+    print("Invalid operation. Please enter a valid operation (+, -, *, /).")
+elif operation == "/" and number2 == 0:
+    print("Error: Division by zero is not allowed.")
