@@ -27,3 +27,11 @@ if operation not in ["+", "-", "*", "/"]:
     print("Invalid operation. Please enter a valid operation (+, -, *, /).")
 elif operation == "/" and number2 == 0:
     print("Error: Division by zero is not allowed.")
+
+qustion = input("Do you want to perform another calculation? (yes/no): ")
+if qustion.lower() == "yes":
+    # Restart the calculator
+    exec(open(__file__).read())
+elif qustion.lower() == "no":
+    print("Thank you for using the calculator. Goodbye!")
+    exit()
